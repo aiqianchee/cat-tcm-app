@@ -1,0 +1,51 @@
+.scope-section {
+  padding: 60px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.scope-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #800000;
+}
+
+.scope-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.scope-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.scope-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.scope-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.scope-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #8B0000;
+}
+
+.scope-card p {
+  font-size: 0.95rem;
+  color: #444;
+}
