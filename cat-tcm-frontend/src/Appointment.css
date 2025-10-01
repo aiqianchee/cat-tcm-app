@@ -1,0 +1,74 @@
+.appointment-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #fffaf5;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #6a1b1b;
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-top: 30px;
+  color: #333;
+}
+
+.form-section {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-section label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-section input,
+.form-section select,
+.form-section textarea {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.time-slots {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.time-slot {
+  padding: 8px 12px;
+  border: 1px solid #6a1b1b;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.time-slot:hover {
+  background: #f4e2e2;
+}
+
+.time-slot.selected {
+  background: #6a1b1b;
+  color: white;
+}
+
+.submit-btn {
+  background: #6a1b1b;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #8a2c2c;
+}

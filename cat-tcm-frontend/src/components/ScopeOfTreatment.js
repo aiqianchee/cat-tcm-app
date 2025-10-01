@@ -1,7 +1,7 @@
-//import React from "react";
-import React, { useEffect, useState } from "react";
+import React from "react";
+//import React, { useEffect, useState } from "react";
 import "../ScopeOfTreatment.css";
-/*
+
 const treatments = [
   {
     id: 1,
@@ -64,28 +64,4 @@ function ScopeOfTreatment() {
   );
 }
 
-export default ScopeOfTreatment; */
-
-const ScopeOfTreatment = () => {
-  const [items, setItems] = useState([]);
-
-  useEffect(() => {
-    fetch("/scope")
-      .then((res) => res.json())
-      .then((result) => setItems(result))
-      .catch((err) => console.error(err));
-  }, []);
-
-  return (
-    <div className="p-4">
-      <h2 className="text-xl font-bold">Scope of Treatment</h2>
-      <ul className="list-disc ml-5">
-        {items.map((t, index) => (
-          <li key={index}>{t}</li>
-        ))}
-      </ul>
-    </div>
-  );
-};
-
-export default ScopeOfTreatment;
+export default ScopeOfTreatment; 

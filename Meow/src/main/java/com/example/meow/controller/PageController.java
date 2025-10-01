@@ -3,9 +3,9 @@ package com.example.meow.controller;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.CrossOrigin;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:3000")
@@ -22,10 +22,12 @@ public class PageController  {
     @GetMapping("/scope")
     public List<String> scope() {
         return List.of(
-            "Acupuncture 🪡",
-            "Herbal Therapy 🌿",
-            "Massage & Paw Reflexology 🐾",
-            "Catnip Aromatherapy 🍃"
+            "Internal Medicine",
+            "Pain Management",
+            "Tendon, Muscle Ache & Sport Injury",
+            "Children’s Ailments",
+            "TCM Aesthetics",
+            "Women’s Health"
         );
     }
 

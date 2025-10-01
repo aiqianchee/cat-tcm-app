@@ -1,7 +1,7 @@
-//import React from "react";
-import React, { useEffect, useState } from "react";
-import "../ContactUs.css"; // We'll style it separately
-/*
+import React from "react";
+//import React, { useEffect, useState } from "react";
+import "../ContactUs.css"; 
+
 function ContactUs() {
   return (
     <section className="contact">
@@ -21,28 +21,4 @@ function ContactUs() {
   );
 }
 
-export default ContactUs; */
-
-const Contact = () => {
-  const [contact, setContact] = useState(null);
-
-  useEffect(() => {
-    fetch("/contact")
-      .then((res) => res.json())
-      .then((result) => setContact(result))
-      .catch((err) => console.error(err));
-  }, []);
-
-  if (!contact) return <p>Loading...</p>;
-
-  return (
-    <div className="p-4">
-      <h2 className="text-xl font-bold">Contact Us</h2>
-      <p>{contact.address}</p>
-      <p>{contact.phone}</p>
-      <p>{contact.email}</p>
-    </div>
-  );
-};
-
-export default Contact;
+export default ContactUs; 

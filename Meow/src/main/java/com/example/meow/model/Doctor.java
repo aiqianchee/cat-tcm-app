@@ -1,5 +1,7 @@
 package com.example.meow.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -15,8 +17,9 @@ public class Doctor {
     private String name;        // Cat doctor’s name
     private String specialty;   // e.g. acupuncture, herbal medicine
     private int experience;     // years of TCM experience
-    private String photoUrl;    // optional, picture of the cat doctor
-
+    @JsonProperty("photo_url")   // tell Jackson to serialize as photo_url
+    private String photo_url;
+    
     // Getters and Setters
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
@@ -30,6 +33,6 @@ public class Doctor {
     public int getExperience() { return experience; }
     public void setExperience(int experience) { this.experience = experience; }
 
-    public String getPhotoUrl() { return photoUrl; }
-    public void setPhotoUrl(String photoUrl) { this.photoUrl = photoUrl; }
+    public String getPhotoUrl() { return photo_url; }
+    public void setPhotoUrl(String photo_url) { this.photo_url = photo_url; }
 }
