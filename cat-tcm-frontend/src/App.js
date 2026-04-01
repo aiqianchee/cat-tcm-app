@@ -10,7 +10,7 @@ import Banner from "./components/Banner";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/cat-tcm-app">
       <div style={{ fontFamily: "Arial, sans-serif", padding: "20px" }}>
         {/* Navigation Menu */}
         <nav className="navbar">

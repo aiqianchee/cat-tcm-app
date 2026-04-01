@@ -8,42 +8,42 @@ const treatments = [
     title: "Internal Medicine",
     description:
       "Gastrointestinal disorders, cardiovascular conditions, high blood pressure, diabetes, eye diseases (including myopia) and other internal diseases.",
-    image: "/images/internal.jpg",
+    image: `${process.env.PUBLIC_URL}/images/internal.jpg`,
   },
   {
     id: 2,
     title: "Pain Management",
     description:
       "Pain management for body and joint pain, aches, conditions of numbness and itchiness.",
-    image: "/images/pain.jpg",
+    image: `${process.env.PUBLIC_URL}/images/pain.jpg`,
   },
   {
     id: 3,
     title: "Tendon, Muscle Ache & Sport Injury",
     description:
       "Treatment for tissue strain, tendon and muscle injury.",
-    image: "/images/sport.png",
+    image: `${process.env.PUBLIC_URL}/images/sport.png`,
   },
   {
     id: 4,
     title: "Children’s Ailments",
     description:
       "Children ailments including cough, cold, digestive disorders and constipation. Regulate and enhance child’s physique.",
-    image: "/images/children.jpg",
+    image: `${process.env.PUBLIC_URL}/images/children.jpg`,
   },
   {
     id: 5,
     title: "TCM Aesthetics",
     description:
       "Beauty, slimming, fur thinning and fur loss problem.",
-    image: "/images/aesthetic.jpg",
+    image: `${process.env.PUBLIC_URL}/images/aesthetic.jpg`,
   },
   {
     id: 6,
     title: "Women’s Health",
     description:
       "Women’s menstrual irregularities and discomfort, infertility and menopausal syndrome.",
-    image: "/images/women.jpg",
+    image: `${process.env.PUBLIC_URL}/images/women.jpg`,
   },
 ];
 
