@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/cat-tcm-app/static/css/main.1f1eaa29.css",
+    "main.js": "/cat-tcm-app/static/js/main.6e983da7.js",
+    "static/js/453.b81963a5.chunk.js": "/cat-tcm-app/static/js/453.b81963a5.chunk.js",
+    "index.html": "/cat-tcm-app/index.html",
+    "static/media/wave.svg": "/cat-tcm-app/static/media/wave.8ab6839eb56139fa7dfd4db2b8d877c6.svg",
+    "main.1f1eaa29.css.map": "/cat-tcm-app/static/css/main.1f1eaa29.css.map",
+    "main.6e983da7.js.map": "/cat-tcm-app/static/js/main.6e983da7.js.map",
+    "453.b81963a5.chunk.js.map": "/cat-tcm-app/static/js/453.b81963a5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1f1eaa29.css",
+    "static/js/main.6e983da7.js"
+  ]
+}
