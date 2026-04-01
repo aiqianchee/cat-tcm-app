@@ -25,7 +25,9 @@ https://aiqianchee.github.io/cat-tcm-app/
 ![Home](./screenshots/home.png)
 ![Scope](./screenshots/scope.png)
 
-📂 Project Structure
+## 📁 Project Structure
+
+```
 .
 ├── Meow/                # Spring Boot backend (Java + Maven)
 │   ├── src/main/java    # Application source code
@@ -40,14 +42,14 @@ https://aiqianchee.github.io/cat-tcm-app/
 ├── .gitignore           # Git ignore rules
 ├── .gitattributes       # Line ending settings
 └── README.md            # Project documentation
-
-⚙️ Prerequisites
+```
+## ⚙️ Prerequisites
 Make sure you have installed:
 Java 17+
 Maven 3+
 Node.js 18+ and npm
 
-🚀 Running the Application
+## 🚀 Running the Application
 1. Run Backend (Spring Boot)
 cd Meow
 mvn spring-boot:run
@@ -64,7 +66,7 @@ http://localhost:8080/about → About Us JSON
 http://localhost:8080/scope → Scope of Treatment JSON
 http://localhost:8080/contact → Contact info JSON
 
-📦 Building for Production
+## 📦 Building for Production
 Build React:
 cd cat-tcm-frontend
 npm run build
@@ -81,17 +83,11 @@ java -jar target/meow-0.0.1-SNAPSHOT.jar
 
 Access everything at: http://localhost:8080
 
-🛠️ Tech Stack
-Frontend: React, React Router, Fetch API / Axios
-Backend: Spring Boot, REST Controllers
-Build Tools: Maven, npm
-Deployment: Single JAR (Spring Boot + React)
-
-📌 To-Do / Future Enhancements
+## 📌 To-Do / Future Enhancements
  Doctor profiles page
  Appointment booking form
  Database integration (MySQL/PostgreSQL)
  Authentication (Spring Security + JWT)
 
-👨‍💻 Author
+## 👨‍💻 Author
 Developed by Ai Qian Chee 🐱
