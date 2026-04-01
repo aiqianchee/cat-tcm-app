@@ -5,6 +5,26 @@ Frontend: React (cat-tcm-frontend)
 Backend: Spring Boot (Meow)
 API: RESTful endpoints for About Us, Scope of Treatment, Contact, etc.
 
+## 🌐 Live Demo
+https://aiqianchee.github.io/cat-tcm-app/
+
+## 🚀 Key Highlights
+- Built a multi-page React application using React Router
+- Deployed frontend using GitHub Pages and handled routing issues with basename configuration
+- Designed RESTful APIs using Spring Boot for modular backend services
+- Structured project as a full-stack application with clear frontend-backend separation
+- Implemented dynamic UI components for treatment listings and clinic information
+
+## 🛠 Tech Stack
+- Frontend: React, React Router, CSS
+- Backend: Spring Boot (Java)
+- API: RESTful services
+- Deployment: GitHub Pages (Frontend)
+
+## 📸 Screenshots
+![Home](./screenshots/home.png)
+![Scope](./screenshots/scope.png)
+
 📂 Project Structure
 .
 ├── Meow/                # Spring Boot backend (Java + Maven)
