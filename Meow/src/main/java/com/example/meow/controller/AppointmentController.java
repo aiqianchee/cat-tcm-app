@@ -1,4 +1,4 @@
-package com.example.meow.controller;
+/*package com.example.meow.controller;
 
 import java.util.List;
 
@@ -31,4 +31,4 @@ public class AppointmentController {
         return repo.findAll();
     }
 }
-
+*/
