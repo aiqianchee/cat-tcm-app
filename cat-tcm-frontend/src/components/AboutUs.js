@@ -32,11 +32,7 @@ function AboutUs() {
         and purrs of comfort</span>. ❤️
       </p>
 
-      <img
-        src="/images/yinyang.jpg"
-        alt="Our Cat TCM Clinic"
-        className="about-img"
-      />
+      <img src={process.env.PUBLIC_URL + "/images/yinyang.jpg"} alt="Our Cat TCM Clinic" className="about-img" />
     </section>
   );
 }
