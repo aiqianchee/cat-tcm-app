@@ -3,7 +3,8 @@ import "../PhysicianProfile.css";
 
 function PhysicianProfile() {
   const [doctors, setDoctors] = useState([]);
-  const [loading, setLoading] = useState(true);   // added this 
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   const API_BASE_URL =
     window.location.hostname === "localhost"
@@ -20,12 +21,12 @@ function PhysicianProfile() {
       })
       .then((data) => {
         setDoctors(data);
-        setLoading(false);   // data is loaded, loading end
+        setLoading(false);
       })
       .catch((err) => {
         console.error("Error fetching doctors:", err);
         setError("Failed to load doctors 😿");
-        setLoading(false);   // error need to remove loading
+        setLoading(false);
       });
   }, [API_BASE_URL]);
 
@@ -33,7 +34,6 @@ function PhysicianProfile() {
     <section style={{ marginBottom: "40px" }}>
       <h2>🐾 Physician Profile</h2>
 
-      
       {loading ? (
         <p>Fetching our purrfect doctors...</p>
       ) : error ? (
