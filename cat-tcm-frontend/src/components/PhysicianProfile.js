@@ -5,26 +5,18 @@ function PhysicianProfile() {
   const [doctors, setDoctors] = useState([]);
 
   useEffect(() => {
-  fetch("http://localhost:8080/api/doctors") //to change
-    .then((res) => {
-      if (!res.ok) {
-        throw new Error("Failed to fetch doctors");
-      }
-      return res.json();
-    })
-    .then((data) => setDoctors(data))
-    .catch((err) => console.error("Error fetching doctors:", err));
-}, []);
+    fetch(`${API_BASE_URL}/api/doctors`)
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error("Failed to fetch doctors");
+        }
+        return res.json();
+      })
+      .then((data) => setDoctors(data))
+      .catch((err) => console.error("Error fetching doctors:", err));
+  }, []);
 
-/*
-const API_BASE_URL =
-  window.location.hostname === "localhost"
-    ? "http://localhost:8080"
-    : "https://my-render-url.onrender.com";
-
-fetch(`${API_BASE_URL}/api/doctors`)
-*/
-console.log("Doctor data:", doctors);
+//console.log("Doctor data:", doctors);
 
    return (
     <section style={{ marginBottom: "40px" }}>

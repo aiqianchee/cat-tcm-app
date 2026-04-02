@@ -14,7 +14,7 @@ function ContactUs() {
       </div>
 
       <div className="contact-gallery">
-        <img src="/images/clinic.png" alt="Clinic view 1" />
+        <img src={process.env.PUBLIC_URL + "/images/clinic.png"} alt="Clinic view 1" />
 
       </div>
     </section>
