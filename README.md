@@ -1,93 +1,83 @@
-🐾 Cat TCM Web Application
+# 🐾 Meow Meow TCM Web Application
 
-A full-stack web application for Cat TCM (Traditional Chinese Medicine) built with:
-Frontend: React (cat-tcm-frontend)
-Backend: Spring Boot (Meow)
-API: RESTful endpoints for About Us, Scope of Treatment, Contact, etc.
+A full-stack web application for a fictional Traditional Chinese Medicine (TCM) clinic, built to simulate a real-world clinic website with both static and dynamic content.
 
 ## 🌐 Live Demo
 https://aiqianchee.github.io/cat-tcm-app/
 
+---
+
+## 🧠 Project Overview
+
+This project demonstrates a **full-stack architecture** with:
+
+- Frontend deployed on GitHub Pages
+- Backend REST API deployed on Render
+- Static and dynamic content separation
+
+### Key Design Decisions
+- Scope of Treatment is **hardcoded** as it is relatively static
+- Physician Profile is **data-driven via API**
+- Appointment booking is simplified using **external form integration (Google Form)**
+
+---
+
 ## 🚀 Key Highlights
+
 - Built a multi-page React application using React Router
-- Deployed frontend using GitHub Pages and handled routing issues with basename configuration
-- Designed RESTful APIs using Spring Boot for modular backend services
-- Structured project as a full-stack application with clear frontend-backend separation
-- Implemented dynamic UI components for treatment listings and clinic information
+- Configured `basename` to support deployment under GitHub Pages subpath
+- Integrated frontend with backend API deployed on cloud (Render)
+- Handled **CORS issues** between frontend and backend
+- Implemented **loading state handling** to manage API latency (Render cold start)
+- Designed a clean and modular full-stack architecture
+
+---
 
 ## 🛠 Tech Stack
-- Frontend: React, React Router, CSS
-- Backend: Spring Boot (Java)
-- API: RESTful services
-- Deployment: GitHub Pages (Frontend)
+
+**Frontend**
+- React
+- React Router
+- CSS
+
+**Backend**
+- Spring Boot (Java)
+- RESTful APIs
+
+**Deployment**
+- Frontend: GitHub Pages
+- Backend: Render (Docker-based deployment)
+
+---
+
+## ⚠️ Notes
+
+- The backend is hosted on a **free cloud instance (Render)**  
+- First request may take a few seconds due to cold start  
+- Loading state is implemented in the UI to improve user experience  
+
+---
 
 ## 📸 Screenshots
-![Home](./screenshots/home.png)
+
+![Home](./screenshots/home.png)  
 ![Scope](./screenshots/scope.png)
+
+---
 
 ## 📁 Project Structure
 
-```
+```text
 .
 ├── Meow/                # Spring Boot backend (Java + Maven)
-│   ├── src/main/java    # Application source code
+│   ├── src/main/java
 │   ├── src/main/resources
-│   └── pom.xml          # Maven build file
+│   └── pom.xml
 │
-├── cat-tcm-frontend/    # React frontend (Create React App)
-│   ├── public/          # Public static assets
-│   ├── src/             # React components
-│   └── package.json     # NPM dependencies
+├── cat-tcm-frontend/    # React frontend
+│   ├── public/
+│   ├── src/
+│   └── package.json
 │
-├── .gitignore           # Git ignore rules
-├── .gitattributes       # Line ending settings
-└── README.md            # Project documentation
-```
-## ⚙️ Prerequisites
-Make sure you have installed:
-Java 17+
-Maven 3+
-Node.js 18+ and npm
-
-## 🚀 Running the Application
-1. Run Backend (Spring Boot)
-cd Meow
-mvn spring-boot:run
-Backend will start on: http://localhost:8080
-
-2. Run Frontend (React Dev Server)
-cd cat-tcm-frontend
-npm install   # first time only
-npm start
-Frontend will start on: http://localhost:3000
-
-3. Access APIs (examples)
-http://localhost:8080/about → About Us JSON
-http://localhost:8080/scope → Scope of Treatment JSON
-http://localhost:8080/contact → Contact info JSON
-
-## 📦 Building for Production
-Build React:
-cd cat-tcm-frontend
-npm run build
-
-This creates a build/ folder.
-
-Copy build/ into Spring Boot’s src/main/resources/static/.
-Now Spring Boot serves React directly.
-
-Package into one JAR:
-cd Meow
-mvn clean package
-java -jar target/meow-0.0.1-SNAPSHOT.jar
-
-Access everything at: http://localhost:8080
-
-## 📌 To-Do / Future Enhancements
- Doctor profiles page
- Appointment booking form
- Database integration (MySQL/PostgreSQL)
- Authentication (Spring Security + JWT)
-
-## 👨‍💻 Author
-Developed by Ai Qian Chee 🐱
+├── screenshots/
+├── README.md
